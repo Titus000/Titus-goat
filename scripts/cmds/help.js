@@ -3,7 +3,7 @@ const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
 const { commands, aliases } = global.GoatBot;
-const doNotDelete = "[ 🧜‍♂🌪 | ❤‍🔥𝚃𝚒𝚝𝚞𝚜☠️]";
+const doNotDelete = "[ 🧜‍♂🌪 | ❤‍🔥OVERGAME ☠️]";
 /** 
 * @author NTKhang
 * @author: do not delete it
@@ -14,7 +14,7 @@ module.exports = {
 	config: {
 		name: "help",
 		version: "1.17",
-		author: "𝚃𝚒𝚝𝚞𝚜",
+		author: "overgame",
 		countDown: 5,
 		role: 0,
 		shortDescription: {
@@ -60,8 +60,8 @@ module.exports = {
 			pageNotFound: "Trang %1 không tồn tại"
 		},
 		en: {
-			help: "┏━━━━━━━━━┓\n┃⟮𓄿𝚃𝙸𝚃𝚄𝚂 𝙱𝙾𝚃𓅛⟯┃\n┗━━━━━━━━━┛\n➠%1\n├─────⛁\n│ 𝙿𝙰𝙶𝙴𝚂 ➣ ❰ %2/%3 ❱\n│ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝙴𝚂 ➢ ❰ %4 ❱\n│ » 𝐭𝐚𝐩𝐞𝐳 ￫%5help￩ <page> 𝙿𝚘𝚞𝚛 𝚕𝚊 𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚘𝚖𝚍𝚜\n│ » 𝚝𝚊𝚙𝚎𝚣 ￫%5help￩ 𝚙𝚘𝚞𝚛 𝚙𝚕𝚞𝚜 𝚍'𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗\n\n┏━━━━━━━━━━━┓\n 𝚏𝚒𝚊𝚗𝚝𝚘𝚝27@𝚐𝚖𝚊𝚒𝚕.𝚌𝚘𝚖     \n┗━━━━━━━━━━━┛\n𝐍𝐨𝐦: ☆𝐅𝐢𝐚𝐧𝐭𝐨 𝐓𝐢𝐭𝐮𝐬☆🪶\n🍆𝐅𝐁: www.facebook.com/100089877583784\n⛁────────✰\n│ %6\n╰────⟮𝚃𝚒𝚝𝚞𝚜⟯────⛁",
-			help2: "┏━━━━━━━━┓\n┃𓅜𝚃𝙸𝚝𝚞𝚜 𝙱𝚘𝚝𓅛 ┃\n┗━━━━━━━━┛ %1 ✰\n│ ➢ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘𝗦: ❰%2❱\n│ ➢ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚎𝚜: 𝚃𝚊𝚙𝚎𝚣 %3help <command name> 𝐩𝐨𝐮𝐫 𝐜𝐨𝐦𝐩𝐫𝐞𝐧𝐝𝐫𝐞 𝐥𝐞 𝐟𝐨𝐧𝐜𝐭𝐢𝐨𝐧𝐧𝐞𝐦𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞\n\n➢ 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚙𝚎𝚞𝚛:\n🍆 𝗡𝗢𝗠: ✰𝙵𝚊𝚗𝚝𝚘 𝚃𝚒𝚝𝚞𝚜✰🪶\n🍆 𝗙𝗕: www.facebook.com/100089877583784\n│ %4\n╰────𝗗/𝙱𝚘𝚝─────☻",
+			help: "┏━━━━━━━━━┓\n┃⟮𓄿overgame 𝙱𝙾𝚃𓅛⟯┃\n┗━━━━━━━━━┛\n➠%1\n├─────⛁\n│ 𝙿𝙰𝙶𝙴𝚂 ➣ ❰ %2/%3 ❱\n│ 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝙴𝚂 ➢ ❰ %4 ❱\n│ » 𝐭𝐚𝐩𝐞𝐳 ￫%5help￩ <page> 𝙿𝚘𝚞𝚛 𝚕𝚊 𝚕𝚒𝚜𝚝𝚎 𝚍𝚎 𝚌𝚘𝚖𝚍𝚜\n│ » 𝚝𝚊𝚙𝚎𝚣 ￫%5help￩ 𝚙𝚘𝚞𝚛 𝚙𝚕𝚞𝚜 𝚍'𝚒𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗\n\n┏━━━━━━━━━━━┓\n 𝚏𝚒𝚊𝚗𝚝𝚘𝚝27@𝚐𝚖𝚊𝚒𝚕.𝚌𝚘𝚖     \n┗━━━━━━━━━━━┛\n𝐍𝐨𝐦: ☆overgame ngandu ☆🪶\n𝐅𝐁:https://www.facebook.com/profile.php?id=61559529381512\n⛁────────✰\n│ %6\n╰────⟮over⟯────⛁",
+			help2: "┏━━━━━━━━┓\n┃𓅜overgame 𝙱𝚘𝚝𓅛 ┃\n┗━━━━━━━━┛ %1 ✰\n│ ➢ 𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘𝗦: ❰%2❱\n│ ➢ 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚎𝚜: 𝚃𝚊𝚙𝚎𝚣 %3help <command name> 𝐩𝐨𝐮𝐫 𝐜𝐨𝐦𝐩𝐫𝐞𝐧𝐝𝐫𝐞 𝐥𝐞 𝐟𝐨𝐧𝐜𝐭𝐢𝐨𝐧𝐧𝐞𝐦𝐞𝐧𝐭 𝐝𝐞 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞\n\n➢ 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚙𝚎𝚞𝚛:\n 𝗡𝗢𝗠: ✰overgame ngandu✰🪶\n 𝗙𝗕: https://www.facebook.com/profile.php?id=61550931056355\n│ %4\n╰────𝗗/𝙱𝚘𝚝─────☻",
 			commandNotFound: "Command \"%1\" does not exist",
 			getInfoCommand: "╭── ⅈ𝖓𝚏օ ────⭓\n│ 𝐍𝐨𝐦 𝐝𝐞 𝐥𝐚 𝐜𝐦𝐝: %1\n│ 𝐃𝐞𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧: %2\n│ 𝐍𝐨𝐦𝐬: %3\n│ 𝐍𝐨𝐦𝐬 𝐝𝐚𝐧𝐬 𝐥𝐞𝐬 𝐠𝐫𝐨𝐮𝐩𝐞𝐬: %4\n│ 𝐕𝐞𝐫𝐬𝐢𝐨𝐧: %5\n│ 𝐑𝐨𝐥𝐞: %6\n│ 𝐓𝐞𝐦𝐩𝐬 𝐝'𝐞𝐱𝐞𝐜𝐮𝐭𝐢𝐨𝐧: %7s\n│ Author: %8\n╰─────────────⭓",
 			onlyInfo: "╭── INFO ────⭓\n│ Command name: %1\n│ Description: %2\n│ Other names: %3\n│ Other names in your group: %4\n│ Version: %5\n│ Role: %6\n│ Time per command: %7s\n│ Author: %8\n╰─────────────⭓",
